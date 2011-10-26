@@ -1,4 +1,4 @@
-package info.gamlor.android.example
+package com.example.android.scala
 
 import android.app.Activity
 import android.os.Bundle
