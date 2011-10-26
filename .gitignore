@@ -1,5 +1,13 @@
+# Source and Android project
 bin/
 gen/
-out/
-.DS_Store
 local.properties
+
+# IntelliJ Idea
+.idea/
+*.iml
+out/
+
+# Mac OS X
+.DS_Store
+
