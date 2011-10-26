@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="MainActivity" default="help">
+<project name="ScalaAndroidProject" default="help">
 
     <!-- The local.properties file is created and updated by the 'android' tool.
          It contains the path to the SDK. It should *NOT* be checked into
@@ -90,7 +90,7 @@ in between standard targets -->
     <!-- This is the task called by intelliJ. Copy the apk to a proper location where IntelliJ finds it.
      IntelliJ is looking for the apk in the build folder. -->
     <target name="debug-install-for-intellij" depends="debug">
-        <copy file="./bin/MainActivity-debug.apk" tofile="./out/production/AndroidScala/AndroidScala.apk"/>
+        <copy file="./bin/${ant.project.name}-debug.apk" tofile="./out/production/${ant.project.name}/${ant.project.name}.apk"/>
     </target>
 
 
