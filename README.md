@@ -13,10 +13,15 @@ Based on https://github.com/gamlerhart/scala-on-droid-example which is based on 
 Adjust project name and package name
 ============
 
-- Inside AndroidManifest.xml replace package with new package name.
-- Inside ant.properties replace manifest.package value with new package name.
-- Inside src/com/example/android/scala/MainActivity.scala replace package at top line with new package name
+### Package name
+- Inside AndroidManifest.xml (line 3) replace package
+- Inside ant.properties (line 24) replace manifest.package value
+- Inside src/com/example/android/scala/MainActivity.scala (line 1) replace package
 - Move src/com/example/android/scala/MainActivity.scala to corresponding folder src/com/new/package/MainActivity.scala (if new package name is com.new.package)
+
+### Project name
+- Inside build.xml (line 2) replace name value
+- (optional) Inside res/values/strings.xml (line 3) replace app_name value
 
 Set up in IntelliJ Idea
 ============
@@ -25,7 +30,7 @@ Set up in IntelliJ Idea
 2. Create new Project
 3. "Create project from scratch"
 4. "New project" dialog
- 1. Give it the same name as you specified above in the settings
+ 1. Give it the same name as you specified above in "Adjust project name and package name" below "Project name"
  2. Choose "Android Module"
  3. Next
 5. Choose "Do not create source directory" and Next
